@@ -54,10 +54,15 @@ Functionalities
 Change Log
 ==========
 
-XXXX-XXXX-XXXX 1.0a0
---------------------
+2021-02-01 1.0a1
+----------------
 
 - Dont evaluate typing annoations on runtime
+- Speed up snippet cache
+- Speed up title path resolving
+- Better tokenizer
+- A lot of bug fixes
+- Add config khufu_snippet_patterns
 
 .. sectionauthor:: Shengyu Zhang
 
