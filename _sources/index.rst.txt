@@ -1,7 +1,6 @@
-
-=====
-Khufu
-=====
+===================
+sphinxnotes-snippet
+===================
 
 ---------------------------------------------
 Command line toolset for Sphinx documentation
@@ -25,7 +24,7 @@ Download it from official Python Package Index:
 
 .. code-block:: console
 
-   $ pip install sphinxnotes-khufu
+   $ pip install sphinxnotes-snippet
 
 Add extension to :file:`conf.py` in your sphinx project:
 
