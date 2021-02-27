@@ -2,12 +2,12 @@
 sphinxnotes-snippet
 ===================
 
----------------------------------------------
-Command line toolset for Sphinx documentation
----------------------------------------------
+-----------------------------------------------------------------
+Non-intrusive literate programming tools for Sphinx documentation
+-----------------------------------------------------------------
 
-.. image:: https://img.shields.io/github/stars/sphinx-notes/khufu.svg?style=social&label=Star&maxAge=2592000
-   :target: https://github.com/sphinx-notes/any
+.. image:: https://img.shields.io/github/stars/sphinx-notes/snippet.svg?style=social&label=Star&maxAge=2592000
+   :target: https://github.com/sphinx-notes/snippet
 
 :version: |version|
 :copyright: Copyright ©2021 by Shengyu Zhang.
@@ -34,7 +34,7 @@ TODO
 
     extensions = [
               # …
-              'sphinxnotes.khufu.ext.snippet',
+              'sphinxnotes.snippet.ext',
               # …
               ]
 
@@ -45,16 +45,31 @@ Configuration
 
 The extension provides the following configuration:
 
-TODO
+:snippet_config: (Type: ``Dict[str,Any]``, Default: ``{}``)
+                 Configuration of snippet cli command.
+
+:snippet_patterns: (Type: ``Dict[str,str]``, Default: ``{}``)
 
 Functionalities
 ===============
 
+TODO
+
 Change Log
 ==========
 
+2021-02-27 1.0b0
+----------------
+
+.. sectionauthor:: Shengyu Zhang
+
+- Refactor!!!
+
+
 2021-02-01 1.0a1
 ----------------
+
+.. sectionauthor:: Shengyu Zhang
 
 - Dont evaluate typing annoations on runtime
 - Speed up snippet cache
@@ -63,12 +78,9 @@ Change Log
 - A lot of bug fixes
 - Add config khufu_snippet_patterns
 
-.. sectionauthor:: Shengyu Zhang
-
 2021-01-29 1.0a0
 ----------------
 
+.. sectionauthor:: Shengyu Zhang
 
 The alpha version is out, enjoy~
-
-.. sectionauthor:: Shengyu Zhang

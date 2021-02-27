@@ -33,9 +33,9 @@
             
   <div class="section" id="sphinxnotes-snippet">
 <h1>sphinxnotes-snippet<a class="headerlink" href="#sphinxnotes-snippet" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="command-line-toolset-for-sphinx-documentation">
-<h2>Command line toolset for Sphinx documentation<a class="headerlink" href="#command-line-toolset-for-sphinx-documentation" title="Permalink to this headline">¶</a></h2>
-<a class="reference external image-reference" href="https://github.com/sphinx-notes/any"><img alt="https://img.shields.io/github/stars/sphinx-notes/khufu.svg?style=social&amp;label=Star&amp;maxAge=2592000" src="https://img.shields.io/github/stars/sphinx-notes/khufu.svg?style=social&amp;label=Star&amp;maxAge=2592000" /></a>
+<div class="section" id="non-intrusive-literate-programming-tools-for-sphinx-documentation">
+<h2>Non-intrusive literate programming tools for Sphinx documentation<a class="headerlink" href="#non-intrusive-literate-programming-tools-for-sphinx-documentation" title="Permalink to this headline">¶</a></h2>
+<a class="reference external image-reference" href="https://github.com/sphinx-notes/snippet"><img alt="https://img.shields.io/github/stars/sphinx-notes/snippet.svg?style=social&amp;label=Star&amp;maxAge=2592000" src="https://img.shields.io/github/stars/sphinx-notes/snippet.svg?style=social&amp;label=Star&amp;maxAge=2592000" /></a>
 <dl class="field-list simple">
 <dt class="field-odd">version</dt>
 <dd class="field-odd"><p>1.0b0</p>
@@ -54,8 +54,9 @@
 <li><p><a class="reference internal" href="#functionalities" id="id4">Functionalities</a></p></li>
 <li><p><a class="reference internal" href="#change-log" id="id5">Change Log</a></p>
 <ul>
-<li><p><a class="reference internal" href="#a1" id="id6">2021-02-01 1.0a1</a></p></li>
-<li><p><a class="reference internal" href="#a0" id="id7">2021-01-29 1.0a0</a></p></li>
+<li><p><a class="reference internal" href="#b0" id="id6">2021-02-27 1.0b0</a></p></li>
+<li><p><a class="reference internal" href="#a1" id="id7">2021-02-01 1.0a1</a></p></li>
+<li><p><a class="reference internal" href="#a0" id="id8">2021-01-29 1.0a0</a></p></li>
 </ul>
 </li>
 </ul>
@@ -70,7 +71,7 @@
 <p>TODO</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
           <span class="c1"># …</span>
-          <span class="s1">&#39;sphinxnotes.khufu.ext.snippet&#39;</span><span class="p">,</span>
+          <span class="s1">&#39;sphinxnotes.snippet.ext&#39;</span><span class="p">,</span>
           <span class="c1"># …</span>
           <span class="p">]</span>
 </pre></div>
@@ -79,15 +80,32 @@
 <div class="section" id="configuration">
 <span id="id1"></span><h3>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h3>
 <p>The extension provides the following configuration:</p>
-<p>TODO</p>
+<dl class="field-list simple">
+<dt class="field-odd">snippet_config</dt>
+<dd class="field-odd"><p>(Type: <code class="docutils literal notranslate"><span class="pre">Dict[str,Any]</span></code>, Default: <code class="docutils literal notranslate"><span class="pre">{}</span></code>)
+Configuration of snippet cli command.</p>
+</dd>
+<dt class="field-even">snippet_patterns</dt>
+<dd class="field-even"><p>(Type: <code class="docutils literal notranslate"><span class="pre">Dict[str,str]</span></code>, Default: <code class="docutils literal notranslate"><span class="pre">{}</span></code>)</p>
+</dd>
+</dl>
 </div>
 <div class="section" id="functionalities">
 <h3>Functionalities<a class="headerlink" href="#functionalities" title="Permalink to this headline">¶</a></h3>
+<p>TODO</p>
 </div>
 <div class="section" id="change-log">
 <h3>Change Log<a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="b0">
+<h4>2021-02-27 1.0b0<a class="headerlink" href="#b0" title="Permalink to this headline">¶</a></h4>
+<p><em>Section author: Shengyu Zhang</em></p>
+<ul class="simple">
+<li><p>Refactor!!!</p></li>
+</ul>
+</div>
 <div class="section" id="a1">
 <h4>2021-02-01 1.0a1<a class="headerlink" href="#a1" title="Permalink to this headline">¶</a></h4>
+<p><em>Section author: Shengyu Zhang</em></p>
 <ul class="simple">
 <li><p>Dont evaluate typing annoations on runtime</p></li>
 <li><p>Speed up snippet cache</p></li>
@@ -96,12 +114,11 @@
 <li><p>A lot of bug fixes</p></li>
 <li><p>Add config khufu_snippet_patterns</p></li>
 </ul>
-<p><em>Section author: Shengyu Zhang</em></p>
 </div>
 <div class="section" id="a0">
 <h4>2021-01-29 1.0a0<a class="headerlink" href="#a0" title="Permalink to this headline">¶</a></h4>
-<p>The alpha version is out, enjoy~</p>
 <p><em>Section author: Shengyu Zhang</em></p>
+<p>The alpha version is out, enjoy~</p>
 </div>
 </div>
 </div>
