@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sphinxnotes-snippet &#8212; sphinxnotes-snippet 1.0b0 documentation</title>
+    <title>sphinxnotes-snippet &#8212; sphinxnotes-snippet 1.0b1 documentation</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -33,12 +33,12 @@
             
   <div class="section" id="sphinxnotes-snippet">
 <h1>sphinxnotes-snippet<a class="headerlink" href="#sphinxnotes-snippet" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="non-intrusive-literate-programming-tools-for-sphinx-documentation">
-<h2>Non-intrusive literate programming tools for Sphinx documentation<a class="headerlink" href="#non-intrusive-literate-programming-tools-for-sphinx-documentation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="non-intrusive-snippet-manager-for-sphinx-documentation">
+<h2>Non-intrusive snippet manager for Sphinx documentation<a class="headerlink" href="#non-intrusive-snippet-manager-for-sphinx-documentation" title="Permalink to this headline">¶</a></h2>
 <a class="reference external image-reference" href="https://github.com/sphinx-notes/snippet"><img alt="https://img.shields.io/github/stars/sphinx-notes/snippet.svg?style=social&amp;label=Star&amp;maxAge=2592000" src="https://img.shields.io/github/stars/sphinx-notes/snippet.svg?style=social&amp;label=Star&amp;maxAge=2592000" /></a>
 <dl class="field-list simple">
 <dt class="field-odd">version</dt>
-<dd class="field-odd"><p>1.0b0</p>
+<dd class="field-odd"><p>1.0b1</p>
 </dd>
 <dt class="field-even">copyright</dt>
 <dd class="field-even"><p>Copyright ©2021 by Shengyu Zhang.</p>
@@ -50,13 +50,17 @@
 <div class="contents local topic" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#installation" id="id2">Installation</a></p></li>
-<li><p><a class="reference internal" href="#configuration" id="id3">Configuration</a></p></li>
-<li><p><a class="reference internal" href="#functionalities" id="id4">Functionalities</a></p></li>
-<li><p><a class="reference internal" href="#change-log" id="id5">Change Log</a></p>
+<li><p><a class="reference internal" href="#extension" id="id3">Extension</a></p>
 <ul>
-<li><p><a class="reference internal" href="#b0" id="id6">2021-02-27 1.0b0</a></p></li>
-<li><p><a class="reference internal" href="#a1" id="id7">2021-02-01 1.0a1</a></p></li>
-<li><p><a class="reference internal" href="#a0" id="id8">2021-01-29 1.0a0</a></p></li>
+<li><p><a class="reference internal" href="#id1" id="id4">Configuration</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#command-line-tool" id="id5">Command Line Tool</a></p></li>
+<li><p><a class="reference internal" href="#change-log" id="id6">Change Log</a></p>
+<ul>
+<li><p><a class="reference internal" href="#b1" id="id7">2021-02-28 1.0b1</a></p></li>
+<li><p><a class="reference internal" href="#a1" id="id8">2021-02-01 1.0a1</a></p></li>
+<li><p><a class="reference internal" href="#a0" id="id9">2021-01-29 1.0a0</a></p></li>
 </ul>
 </li>
 </ul>
@@ -77,8 +81,10 @@
 </pre></div>
 </div>
 </div>
-<div class="section" id="configuration">
-<span id="id1"></span><h3>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="extension">
+<span id="configuration"></span><h3>Extension<a class="headerlink" href="#extension" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id1">
+<h4>Configuration<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
 <p>The extension provides the following configuration:</p>
 <dl class="field-list simple">
 <dt class="field-odd">snippet_config</dt>
@@ -86,21 +92,25 @@
 Configuration of snippet cli command.</p>
 </dd>
 <dt class="field-even">snippet_patterns</dt>
-<dd class="field-even"><p>(Type: <code class="docutils literal notranslate"><span class="pre">Dict[str,str]</span></code>, Default: <code class="docutils literal notranslate"><span class="pre">{}</span></code>)</p>
+<dd class="field-even"><p>(Type: <code class="docutils literal notranslate"><span class="pre">Dict[str,List[str]]</span></code>, Default: <code class="docutils literal notranslate"><span class="pre">{}</span></code>)</p>
 </dd>
 </dl>
 </div>
-<div class="section" id="functionalities">
-<h3>Functionalities<a class="headerlink" href="#functionalities" title="Permalink to this headline">¶</a></h3>
-<p>TODO</p>
+</div>
+<div class="section" id="command-line-tool">
+<h3>Command Line Tool<a class="headerlink" href="#command-line-tool" title="Permalink to this headline">¶</a></h3>
+<p>A python script named <code class="file docutils literal notranslate"><span class="pre">snippet</span></code> should be installed in your path.
+(Usually <code class="file docutils literal notranslate"><span class="pre">/usr/local/bin</span></code> or <code class="file docutils literal notranslate"><span class="pre">~/.local/bin</span></code>).</p>
+<p>Invoke <code class="docutils literal notranslate"><span class="pre">snippet</span> <span class="pre">--help</span></code> for usage.</p>
 </div>
 <div class="section" id="change-log">
 <h3>Change Log<a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="b0">
-<h4>2021-02-27 1.0b0<a class="headerlink" href="#b0" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="b1">
+<h4>2021-02-28 1.0b1<a class="headerlink" href="#b1" title="Permalink to this headline">¶</a></h4>
 <p><em>Section author: Shengyu Zhang</em></p>
 <ul class="simple">
 <li><p>Refactor!!!</p></li>
+<li><p>Rename from sphinxnotes-khufu</p></li>
 </ul>
 </div>
 <div class="section" id="a1">

@@ -2,9 +2,9 @@
 sphinxnotes-snippet
 ===================
 
------------------------------------------------------------------
-Non-intrusive literate programming tools for Sphinx documentation
------------------------------------------------------------------
+------------------------------------------------------
+Non-intrusive snippet manager for Sphinx documentation
+------------------------------------------------------
 
 .. image:: https://img.shields.io/github/stars/sphinx-notes/snippet.svg?style=social&label=Star&maxAge=2592000
    :target: https://github.com/sphinx-notes/snippet
@@ -38,33 +38,41 @@ TODO
               # …
               ]
 
+
 .. _Configuration:
 
+Extension
+=========
+
 Configuration
-=============
+-------------
 
 The extension provides the following configuration:
 
 :snippet_config: (Type: ``Dict[str,Any]``, Default: ``{}``)
                  Configuration of snippet cli command.
 
-:snippet_patterns: (Type: ``Dict[str,str]``, Default: ``{}``)
+:snippet_patterns: (Type: ``Dict[str,List[str]]``, Default: ``{}``)
 
-Functionalities
-===============
 
-TODO
+Command Line Tool
+=================
+
+A python script named :file:`snippet` should be installed in your path.
+(Usually :file:`/usr/local/bin` or :file:`~/.local/bin`).
+
+Invoke ``snippet --help`` for usage.
 
 Change Log
 ==========
 
-2021-02-27 1.0b0
+2021-02-28 1.0b1
 ----------------
 
 .. sectionauthor:: Shengyu Zhang
 
 - Refactor!!!
-
+- Rename from sphinxnotes-khufu
 
 2021-02-01 1.0a1
 ----------------
