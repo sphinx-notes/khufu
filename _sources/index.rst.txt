@@ -66,6 +66,15 @@ Invoke ``snippet --help`` for usage.
 Change Log
 ==========
 
+2021-03-20 1.0b2
+----------------
+
+.. sectionauthor:: Shengyu Zhang
+
+- Improve keywords extraction
+- Speed up snippet dumping
+- Code clean up
+
 2021-02-28 1.0b1
 ----------------
 
